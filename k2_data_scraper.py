@@ -2,7 +2,7 @@
 API/Web Scraper to pull data from corrected light curves.
 python3 -m cProfile -s tottime k2_data_scraper.py
 '''
-
+__author__ = "Ollie Jackson"
 #import requests
 from bs4 import BeautifulSoup
 import urllib.request, urllib.parse, urllib.error
