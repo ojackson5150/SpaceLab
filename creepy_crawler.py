@@ -27,7 +27,6 @@ def scrape_init(url, epics):
             scrape_init(re.findall('all.*\.html', str(tag))[0], epics)
         elif 'EPIC' in tag.string:
             epics.append(re.findall('k2.*\.html', str(tag))[0])
-            break
     return epics
 
 def threader(data):
